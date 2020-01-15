@@ -15,15 +15,9 @@ namespace Estudos
             Console.WriteLine("Dia 14-01-2020 17:06");
             Console.WriteLine("Nova modificação nova");
 
-            for (int c = 0; c < 10; c++)
-            {
-                Console.WriteLine("oi");
-            }
 
-            for (int c = 0; c < 5; c++)
-            {
-                Console.WriteLine("oi");
-            }
+            Console.WriteLine("Nova modificação nova 15/01/2020");
+
         }
     }
 }
