@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Estudos.Entities;
+using Estudos.Entities.Enums;
 
 namespace Estudos
 {
@@ -12,12 +13,19 @@ namespace Estudos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Dia 14-01-2020 17:06");
-            Console.WriteLine("Nova modificação nova");
+            Order order = new Order
+            {
+                Id = 1080,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment,
 
+            };
 
-            Console.WriteLine("Nova modificação nova 15/01/2020");
+            Console.WriteLine(order);
 
+            string txt = OrderStatus.PendingPayment.ToString();
+
+            Console.WriteLine(txt);
         }
     }
 }
