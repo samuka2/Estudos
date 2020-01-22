@@ -13,19 +13,13 @@ namespace Estudos
     {
         static void Main(string[] args)
         {
-            Order order = new Order
-            {
-                Id = 1080,
-                Moment = DateTime.Now,
-                Status = OrderStatus.PendingPayment,
+            Console.WriteLine("Enter departmet's name: ");
+            string dtName = Console.ReadLine();
+            Console.WriteLine("Enter worker data:");
+            string name = Console.ReadLine();
+            Console.Write("Level (Junior/MidLevel/Senior)");
+            WorkLevel level = Enum.Parse<WorkLevel>(Console.ReadLine());
 
-            };
-
-            Console.WriteLine(order);
-
-            string txt = OrderStatus.PendingPayment.ToString();
-
-            Console.WriteLine(txt);
         }
     }
 }

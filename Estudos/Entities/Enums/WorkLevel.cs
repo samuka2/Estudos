@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Estudos.Entities.Enums
 {
-    class WorkLevel
+    enum WorkLevel : int
     {
+        junior    = 0,
+        MidLevel  = 1,
+        Senior    = 2
     }
 }

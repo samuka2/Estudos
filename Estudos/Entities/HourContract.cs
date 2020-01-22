@@ -20,11 +20,13 @@ namespace Estudos.Entities
             Hours = hours;
         }
 
-        //Calcula o total de horas 
+        //Calcula o total de horas horas * valor das horas
         public double totalValue()
         {
-            return 0;
+            return ValuePerHour * Hours;
         }
+
+        
     }
     
 }
